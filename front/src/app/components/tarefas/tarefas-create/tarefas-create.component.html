@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-title>Nova Tarefa</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Título"
+             [(ngModel)]="tarefa.titulo" name="titulo">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Descrição"
+             [(ngModel)]="tarefa.descricao" name="descricao">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Status"
+             [(ngModel)]="tarefa.status" name="status">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Data de Início</mat-label>
+      <input matInput [matDatepicker]="picker"
+             [(ngModel)]="tarefa.dtInicio" name="dtInicio">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+   <!-- <mat-form-field>
+      <input matInput placeholder="Data de Início"
+             [(ngModel)]="tarefa.dtInicio" name="dtInicio">
+    </mat-form-field>-->
+    <mat-form-field>
+      <input matInput placeholder="Data de Término Previsto"
+             [(ngModel)]="tarefa.dtTerminoPrevisto" name="dtTerminoPrevisto">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Data de Término Efetivo"
+             [(ngModel)]="tarefa.dtTerminoEfetivo" name="dtTerminoEfetivo">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createTarefas()">
+    Salvar
+  </button>
+
+  <button mat-raised-button (click)="cancel()" color="warn">
+    Cancelar
+  </button>
+</mat-card>

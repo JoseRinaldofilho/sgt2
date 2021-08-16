@@ -1,0 +1,26 @@
+  <mat-card>
+    <mat-card-title>Novo Responsável</mat-card-title>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Nome"
+               [(ngModel)]="responsavel.nome" name="nome">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="E-mail"
+               [(ngModel)]="responsavel.email" name="email">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="CPF"
+               [(ngModel)]="responsavel.cpf" name="cpf">
+      </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createResposaveis()">
+      Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()" color="warn">
+      Cancelar
+    </button>
+  </mat-card>
+
+
