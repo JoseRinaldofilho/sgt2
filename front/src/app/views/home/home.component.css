@@ -6,5 +6,13 @@
 
   .home .subtitle{
     font-size: 1.1rem;
+    color: brown;
 
   }
+.gerenciado{
+
+    max-height: 250px;
+    height: 100%;
+  align-items: center;
+
+}
