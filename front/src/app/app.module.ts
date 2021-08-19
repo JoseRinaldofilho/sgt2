@@ -25,6 +25,9 @@ import { ResponsaveisReadComponent } from './components/responsaveis/responsavei
 import { TarefasReadComponent } from './components/tarefas/tarefas-read/tarefas-read.component';
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from "@angular/material/core";
+import {InputMaskModule} from 'primeng/inputmask';
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +58,9 @@ import { MatNativeDateModule } from "@angular/material/core";
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    InputMaskModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

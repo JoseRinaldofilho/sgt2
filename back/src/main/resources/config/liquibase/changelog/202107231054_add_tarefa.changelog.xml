@@ -18,7 +18,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="202107231054-1" author="igor.pignata">
+    <changeSet id="202107231054-1" author="jose">
         <createTable tableName="tp_tarefa">
             <column name="id" type="bigint">
                 <constraints primaryKey="true"/>
@@ -27,7 +27,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="202107231054-2" author="igor.pignata">
+    <changeSet id="202107231054-2" author="jose">
         <addForeignKeyConstraint baseTableName="tarefa"
                                  baseColumnNames="id_tipo"
                                  constraintName="FK_TP_TAREFA_TAREFA"
@@ -35,7 +35,7 @@
                                  referencedColumnNames="id"/>
     </changeSet>
 
-    <changeSet id="202107231054-3" author="igor.pignata">
+    <changeSet id="202107231054-3" author="jose">
         <addForeignKeyConstraint baseTableName="tarefa"
                                  baseColumnNames="id_responsavel"
                                  constraintName="FK_TP_RESPONSAVEL_TAREFA"

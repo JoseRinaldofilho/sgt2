@@ -35,7 +35,7 @@ public class Tarefa {
 
     @Column(name = "status")
     private String status;
-//
+
     @Column(name = "data_inicio")
     private LocalDate dtInicio;
 
